@@ -24,12 +24,12 @@ const Items = ({data,index}) => {
 
   return (
  <>
-
- <tr>
-      <td style={{minWidth:'150px'}} className='border  py-2'>{productName}</td>
-      <td style={{minWidth:'150px'}} className='border  py-2'>{productPrice}</td>
-      <td onClick={()=>deleteProduct(index)} style={{width:'150px',cursor:'pointer'}} className='border text-bg-danger'>x</td>
+  <tr>
+    <td className='border'>{productName}</td>
+    <td className='border'>{productPrice}</td>
+    <td onClick={()=>deleteProduct(index)} style={{cursor:'pointer'}} className='border text-bg-danger'>X</td>
   </tr>
+
 
  
  
